@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:walletappui/pages/my_button.dart';
 import 'package:walletappui/util/my_card.dart';
 
 class HomePage extends StatefulWidget {
@@ -100,10 +101,48 @@ class _HomePageState extends State<HomePage> {
                 //color
                 activeDotColor: Colors.grey.shade500,
               ),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+            //three buttons => send + pay +bils
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  //send button
+                  MyButton(
+                    iconImagePath: 'lib/icons/send-money.png',
+                    buttonText: 'Send',
+                  ),
+                  //pay button
+                  MyButton(
+                    iconImagePath: 'lib/icons/creditcard.png',
+                    buttonText: 'Pay',
+                  ),
+
+                  //bills button
+                  MyButton(
+                    iconImagePath: 'lib/icons/bill.png',
+                    buttonText: 'Bills',
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 15,
+            ),
+
+            //column -> stats + transaction
+            Column(
+              children: [
+                //stats
+
+                //trancsaction
+              ],
             )
           ],
-
-          //three buttons => send + pay +bils
 
           //columns => stats, transation
         ),
