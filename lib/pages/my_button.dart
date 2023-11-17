@@ -18,11 +18,11 @@ class MyButton extends StatelessWidget {
           height: 90,
           padding: const EdgeInsets.all(20),
           decoration: BoxDecoration(
-              color: Colors.white,
+              // color: Colors.white,
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.shade400,
+                  color: Colors.white,
                   blurRadius: 40,
                   spreadRadius: 10,
                 )

@@ -138,7 +138,7 @@ class _HomePageState extends State<HomePage> {
 
             //column -> stats + transaction
             const Padding(
-              padding: EdgeInsets.all(12),
+              padding: EdgeInsets.all(25.0),
               child: Column(
                 children: [
                   //stats
@@ -147,14 +147,13 @@ class _HomePageState extends State<HomePage> {
                     tileSubtitle: 'Payments and Incomes',
                     tileTitle: 'Statistics',
                   ),
-                  Icon(Icons.arrow_forward_ios),
+
                   //transaction
                   MyListTile(
                     iconImagePath: 'lib/icons/transaction.png',
                     tileSubtitle: 'Transaction history',
                     tileTitle: 'Transactions',
                   ),
-                  Icon(Icons.arrow_forward_ios),
                 ],
 
                 //trancsaction
