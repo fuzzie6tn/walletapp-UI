@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:walletappui/pages/my_button.dart';
+import 'package:walletappui/pages/my_list_tile.dart';
 import 'package:walletappui/util/my_card.dart';
 
 class HomePage extends StatefulWidget {
@@ -130,17 +131,34 @@ class _HomePageState extends State<HomePage> {
                 ],
               ),
             ),
+
             const SizedBox(
               height: 15,
             ),
 
             //column -> stats + transaction
-            Column(
-              children: [
-                //stats
+            const Padding(
+              padding: EdgeInsets.all(12),
+              child: Column(
+                children: [
+                  //stats
+                  MyListTile(
+                    iconImagePath: 'lib/icons/statistics.png',
+                    tileSubtitle: 'Payments and Incomes',
+                    tileTitle: 'Statistics',
+                  ),
+                  Icon(Icons.arrow_forward_ios),
+                  //transaction
+                  MyListTile(
+                    iconImagePath: 'lib/icons/transaction.png',
+                    tileSubtitle: 'Transaction history',
+                    tileTitle: 'Transactions',
+                  ),
+                  Icon(Icons.arrow_forward_ios),
+                ],
 
                 //trancsaction
-              ],
+              ),
             )
           ],
 
