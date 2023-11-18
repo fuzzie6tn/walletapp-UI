@@ -34,15 +34,15 @@ class MyCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
+                const Text(
+                  'Balance',
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
                 Image.asset(
                   'lib/icons/visa.png',
                   height: 50,
                 ),
               ],
-            ),
-            const Text(
-              'Balance',
-              style: TextStyle(color: Colors.white, fontSize: 18),
             ),
             const SizedBox(
               height: 15,
